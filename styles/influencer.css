@@ -5,10 +5,17 @@
   font-weight: 400;
   font-style: normal;
 }
+/* variety style */
 body{
     max-width: 1440px;
     margin: 0 auto;
 }
+.description{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+/* navbar */
 li , a{
     text-decoration: none;
     list-style: none;
@@ -30,6 +37,42 @@ li , a{
     gap: 40px;
     font-weight: 500;
 }
+/* banner */
+.banner{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 132px 0 120px;
+    align-items: center;
+}
+.banner-content{
+    max-width: 582px;
+    text-align: start;
+}
+.ban-link{
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+.banner-image{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position:left ;
+}
+.btn{
+    background-color: #E02C6D;
+    padding: 15px 29px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 41px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #930834;
+}
 
 
 
@@ -42,6 +85,16 @@ li , a{
     .navbar{
         padding: 0;
     }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-image{
+        width: auto;
+    }
 }
 /* responsive-small device */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -52,13 +105,24 @@ li , a{
         padding: 0;
         justify-content: space-around;
     }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .banner-content{
+        text-align: center;
+    }
 }
+    
 /* responsive-medium device */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .menu{
         display: none;  
     }
     .navbar{
+        padding: 0;
+    }
+    .banner{
         padding: 0;
     }
 }
@@ -68,6 +132,9 @@ li , a{
         display: none;
     }
     .navbar{
+        padding: 0 60px;
+    }
+    .banner{
         padding: 0 60px;
     }
 }
