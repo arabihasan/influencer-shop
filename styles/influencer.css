@@ -57,6 +57,7 @@ li , a{
 .banner-image{
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-position:left ;
 }
 .btn{
@@ -73,8 +74,81 @@ li , a{
 .btn:hover{
     background-color: #930834;
 }
-
-
+/* client logos */
+.client-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 165px;
+    margin-top: 100px;
+    gap: 40px;
+}
+/* products */
+.product{
+    /* padding: 0 190px; */
+    margin-top: 150px;
+}
+.pl{
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #3A3A3A;
+}
+.product-card{
+    display: grid;
+    grid-template-columns: repeat(3 , 3fr);
+    gap: 30px;
+    padding: 0 135px;
+}
+.card{
+    border-radius: 5px;
+    padding: 18px 14px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.card-img{
+    width: 100%;
+}
+.pro-name{
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin: 0;
+    color: #18191F;
+}
+.pro-price{
+    font-weight: 400;
+    font-size: 1.50rem;
+    margin: 0;
+    color: #18191F;
+}
+.rate{
+    color: #5E6366;
+    font-weight: 700;
+    text-align: center;
+}
+.pro-des{
+    font-weight: 700;
+    font-size: 0.8rem;
+    max-width: 196px;
+    margin: 0;
+    color: #787885;
+}
+.ratting{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.see{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    width: 100%;
+    margin-right: 135px;
+    margin-top: 5px;
+    color: #E02C6D;
+}
 
 
 /* responsive-extra small device */
@@ -95,7 +169,20 @@ li , a{
     .banner-image{
         width: auto;
     }
+    .client-logo{
+        padding: 0;
+    }
+    .product-card{
+        grid-template-columns: repeat(1 , 9fr);
+        align-items: center;
+        padding: 0 20px;
+        gap: 10px;
+    }
+    .see{
+        margin-right: 20px;
+    }
 }
+    
 /* responsive-small device */
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .list{
@@ -112,6 +199,18 @@ li , a{
     .banner-content{
         text-align: center;
     }
+    .client-logo{
+        padding: 0 20px;
+    }
+    .product-card{
+        grid-template-columns: repeat(1 , 9fr);
+        align-items: center;
+        padding: 0 30px;
+        gap: 10px;
+    }
+    .see{
+        margin-right: 30px;
+    }
 }
     
 /* responsive-medium device */
@@ -125,6 +224,18 @@ li , a{
     .banner{
         padding: 0;
     }
+    .client-logo{
+        padding: 0 40px;
+    }
+    .product-card{
+        grid-template-columns: repeat(2 , 9fr);
+        align-items: center;
+        padding: 0 40px;
+        gap: 20px;
+    }
+    .see{
+        margin-right: 40px;
+    }
 }
 /* responsive-large device */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -136,6 +247,15 @@ li , a{
     }
     .banner{
         padding: 0 60px;
+    }
+    .client-logo{
+        padding: 0 60px;
+    }
+    .product-card{
+        padding: 0 50px;
+    }
+    .see{
+        margin-right: 50px;
     }
 }
 /* responsive extra-large */
