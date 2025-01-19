@@ -46,7 +46,7 @@ li , a{
     align-items: center;
 }
 .banner-content{
-    max-width: 582px;
+    /* max-width: 582px; */
     text-align: start;
 }
 .ban-link{
@@ -58,7 +58,7 @@ li , a{
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position:left ;
+    /* background-position:left ; */
 }
 .btn{
     background-color: #E02C6D;
@@ -144,7 +144,7 @@ li , a{
     justify-content: end;
     text-align: right;
     width: 100%;
-    margin-right: 135px;
+    /* margin-right: 135px; */
     margin-top: 5px;
     color: #E02C6D;
 }
@@ -163,12 +163,6 @@ li , a{
     font-size: 2.5rem;
     margin: 0;
 }
-/* .feat-img{
-    width: 100%;
-}
-.fi{
-    max-width: 404px;
-} */
  footer{
     display: flex;
     flex-direction: column;
@@ -212,7 +206,10 @@ li , a{
         font-size: 2.25rem;
     }
     .banner-image{
-        width: auto;
+        width: 100%;
+    }
+    .banner-image img{
+        width: 100%;
     }
     .client-logo{
         padding: 0;
@@ -230,6 +227,10 @@ li , a{
         flex-direction: column-reverse;
         text-align: center;
         padding: 0;
+        width: 100%;
+    }
+    .fi img{
+        width: 100%;
     }
 }
     
@@ -261,6 +262,11 @@ li , a{
     .see{
         margin-right: 30px;
     }
+    .featured-section{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
 }
     
 /* responsive-medium device */
@@ -286,6 +292,11 @@ li , a{
     .see{
         margin-right: 40px;
     }
+    .featured-section{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
 }
 /* responsive-large device */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -306,6 +317,10 @@ li , a{
     }
     .see{
         margin-right: 50px;
+    }
+    .featured-section{
+        padding: 40px;
+        gap: 30px;
     }
 }
 /* responsive extra-large */
